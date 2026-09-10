@@ -24,3 +24,5 @@ function verificarIdade(usuarioAtual: usuario){
 };
 verificarIdade(jogador);
 verificarIdade(jogadorVelho);
+
+
