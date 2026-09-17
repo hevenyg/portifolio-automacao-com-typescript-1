@@ -12,7 +12,7 @@ type Coment ={
     id: number;
     name: string;
     email: string;
-    Body: string;
+    body: string;
 };
 
 //GET /posts
@@ -22,7 +22,7 @@ async function listarPosts(){
     const res = await fetch(`${BASE_URL}/posts`);
     const dados: Post[] = await res.json();
         console.log(`✅ Status: ${res.status}`);
-        console.log(`Lidos ${dados.length} posts. Ex do primeiro:`, dados[0].tittle);
+        console.log(`Lidos ${dados.length} posts. Ex do primeiro:`, dados[0].title);
 
 }
 //GET /posts/1
